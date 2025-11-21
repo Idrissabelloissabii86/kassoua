@@ -10,6 +10,7 @@
 <body>
 <!-- Header -->
 <input type="checkbox" id="check" hidden>
+<input type="checkbox" name="" id="panier-check" hidden>
 <header>
     <div class="top-header">
         <div class="logo">
@@ -45,17 +46,26 @@
 
     <div class="bottom-header" id="navLinks">
         <nav>
-            <a href="#" class="home">Home</a>
-            <a href="#" class="other-link">Boutique</a>
-            <a href="#" class="other-link">Catégories</a>
+            <a href="../accueil.html" class="home">Home</a>
+             <div class="dropdown">
+                <a href="#" class="other-link">Catégories <i class="fa-solid fa-angle-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="../artisanat/artisanat.html">Artisanat</a>
+                    <a href="../agro/agro.html">Agricoles</a>
+                    <a href="#">Elevages</a>
+                </div>
+            </div>
             <a href="#" class="other-link">Promotions</a>
-            <a href="#" class="other-link">Contact</a>
-            <a href="#" class="other-link">A propos</a>
+            <a href="#contact" class="other-link">Contact</a>
+            <a href="#about" class="other-link">A propos</a>
         </nav>
 
         <div class="left-icon">
-            <i class="fa fa-shopping-cart panier"></i>
-            <a href="#" class="compte"><i class="fa fa-user"></i><span>Connexion</span></a>
+            <label for="panier-check">
+                <i class="fa fa-shopping-cart panier"></i>
+            </label>
+            
+            <a href=".././connexion.html" class="compte"><i class="fa fa-user"></i><span>Déconnexion</span></a>
         </div>
     </div>
 </header>
@@ -64,6 +74,8 @@
 
 <main>
     
+    
+
 </main>
 
 <!-- Footer -->
@@ -128,10 +140,12 @@
     </div>
     <div class="footer-bottom">
         <p>&copy; 2025 Niger Artisan. Tous droits réservés.</p>
-        <a href="#" class="back-to-top">
+        <a href="#hero-slider" class="back-to-top">
             <i class="fa-solid fa-arrow-up"></i>
         </a>
     </div>
 </footer>
+    
+    
 </body>
 </html>
