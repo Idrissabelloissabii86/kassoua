@@ -1,0 +1,1152 @@
+.arriere-plan {
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    /* margin-top: 40px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("./assets/Niger-agricole.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.hero-content{
+    text-align: center;
+}
+
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-top: 30px;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+.description {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+    font-weight: 400;
+            width: 50%;
+}
+
+
+
+.filter-btn {
+    padding: 10px 25px;
+    border: 2px solid #2E5939;
+    background: white;
+    color: #2E5939;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 600;
+}
+
+.filter-btn:hover {
+    background: #2E5939;
+    color: white;
+}
+
+
+
+.products-section {
+    width: 80%;
+    margin: 60px auto;
+    padding: 0 20px;
+    border-radius: 10px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #D4AF37;
+    position: relative;
+    padding: 20px;
+    font-weight: 700;
+}
+
+
+
+.products-flex {
+    width: 80%;
+    margin: auto;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.product-card {
+    width: 100%;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    position: relative;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 1px 1px 15px 1px #1f3d27ee;
+}
+
+
+
+.product-image {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+    background: #f0f0f0;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.1);
+}
+
+.product-content {
+    padding: 25px;
+}
+
+.product-category {
+    color: #D4AF37;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.product-title {
+    font-size: 1.4rem;
+    color: #2E5939;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.product-description {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.product-price {
+    font-size: 1.8rem;
+    color: #2E5939;
+    font-weight: bold;
+}
+
+
+.deux-products {
+    
+}
+
+
+.currency {
+    font-size: 1rem;
+    color: #666;
+}
+
+.add-to-cart {
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #2E5939, #3a6b47);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    box-shadow: 0 4px 10px rgba(46, 89, 57, 0.3);
+}
+
+.add-to-cart:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(46, 89, 57, 0.4);
+}
+
+.title1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3em;
+    width: 100%;
+    line-height: 3em;
+    text-align: center;
+    flex-direction: column;
+}
+
+.title2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    width: 100%;
+    line-height: 3em;
+    flex-direction: column;
+}
+
+.title3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    width: 100%;
+    line-height: 3em;
+    flex-direction: column;
+}
+
+.product {
+    display: flex;
+    margin-top: 2em;
+}
+
+.product img {
+    width: 100%;
+}
+
+.margin-left-right {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.product-card__list {
+    list-style-type: none;
+}
+
+
+@media (max-width:1440px) {
+    .products-flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+
+    .products-section {
+        width: 90%;
+    }
+
+    .products-flex {
+        display: block;
+    }
+
+}
+
+@media (max-width:1024px) {
+   
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    /* .nav-links {
+        gap: 1rem;
+    } */
+
+    .products-flex {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .filters {
+        justify-content: flex-start;
+    }
+}
+
+
+
+@media (max-width:425px) {
+    .products-flex {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .products-section {
+        width: 90%;
+    }
+
+    /* footer {
+        text-align: center;
+    } */
+
+    /* .arriere-plan {
+        margin-top: 9rem;
+    } */
+
+    .hero-content {
+        margin-top: 10rem;
+        text-align: center;
+    }
+
+    .hero-content .description {
+        font-size: 1.4rem;
+        line-height: 1.8;
+        color: #fff;
+        padding: 50px;
+        text-align: center;
+        font-weight: 400;
+        border: solid red ;
+
+    }
+
+}
+
+
+
+
+/* ==================================================== */
+/* MODALE / SLIDER CSS SEUL - NOUVELLE VERSION */
+/* ==================================================== */
+
+/* 1. État Initial de la Modale (Inchangé) */
+.modal-css {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2001;
+    visibility: hidden;
+    /* opacity: 0; */
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+/* 2. Affichage de la Modale au Clic de la Checkbox (Inchangé) */
+#modal-toggle:checked ~ .modal-css {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+/* ==================================================== */
+/* 3. Conteneur de la Modale (FLOU D'ARRIÈRE-PLAN) */
+/* ==================================================== */
+.modal-content-css {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1200px;
+    max-height: 90vh;
+    width: 90%;
+    background-color: #b1c2af; 
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+   backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px); 
+    overflow: hidden;
+}
+
+
+
+
+.modal-css {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100vh;
+    width: 100%;
+    height: 100%;
+    z-index: 2001;
+    backdrop-filter: blur(3px);
+}
+
+/* Bouton de Fermeture (Inchangé) */
+.close-btn-css {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    left: 73em;
+    top: 0;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    color: #fff;
+    /* font-size: 30px; */
+    cursor: pointer;
+    z-index: 10001;
+    position: absolute;
+   background-color: #777777;
+    /* padding: 0 10px 5px; */
+}
+
+
+
+.close-btn-css:hover {
+     color: #D4AF37; 
+    background-color: rgba(0, 0, 0, 0.7);
+} 
+
+
+/* ==================================================== */
+/* 4. Structure Interne du SLIDER (Grande Image + Détails) */
+/* ==================================================== */
+.slider-pop-up {
+    display: flex;
+    gap: 20px;
+    max-height: 100%;
+}
+
+.main-image-display {
+    width: 65%; 
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.details-and-thumbnails {
+    /* width: 35%;  */
+    display: flex;
+    flex-direction: column;
+}
+
+/* ==================================================== */
+/* 5. Styles de l'Image Principale (Slider) */
+/* ==================================================== */
+
+.slides {
+    display: flex;
+    width: 900%; 
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+
+width: calc(100% / 9);
+    height: 100%;
+    max-height: 70vh; 
+    object-fit: contain;
+    background-color: white;
+}
+
+/* ==================================================== */
+/* 6. Styles des Détails (Product Info) */
+/* ==================================================== */
+.product-info {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-right: 15px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+.product-detail {
+    display: none; 
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    transition: opacity 0.3s;
+}
+
+.product-detail h3 {
+    color: #2E5939;
+    font-size: 1.8rem;
+    margin-top: 0;
+}
+
+.product-detail p {
+    color: #444;
+    line-height: 1.6;
+}
+
+.product-price-popup {
+    display: block;
+    font-size: 1.5rem;
+    color: #D4AF37;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Affichage du premier détail par défaut */
+#product-detail-1 {
+    display: block;
+}
+
+/* ==================================================== */
+/* 7. Styles des Vignettes (Thumbnails) */
+/* ==================================================== */
+.thumbnails-selector {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.thumbnail-item {
+    display: block;
+    height: 80px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border 0.2s;
+}
+
+.thumbnail-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.thumbnail-item:hover {
+    border-color: #D4AF37;
+}
+
+/* 8. Logique d'Affichage CSS pour le Slider & Détails (Le Hack) */
+
+/* Règle par défaut pour cacher tous les détails */
+.product-detail { display: none; }
+
+/* Logique de décalage de la grande image et d'affichage des détails
+  en fonction de l'input radio coché par la vignette (label) 
+*/
+
+/* --- Image 1 (Riz) --- */
+#img-vignette-1:checked ~ .slider-pop-up .main-image-display .slides { transform: translateX(0%); }
+#img-vignette-1:checked ~ .slider-pop-up .details-and-thumbnails #product-detail-1 { display: block; }
+#img-vignette-1:checked ~ .slider-pop-up .details-and-thumbnails .thumbnails-selector label[for="img-vignette-1"] { border-color: #2E5939; }
+
+/* --- Image 2 (Maïs) --- */
+#img-vignette-2:checked ~ .slider-pop-up .main-image-display .slides { transform: translateX(-11.11%); }
+#img-vignette-2:checked ~ .slider-pop-up .details-and-thumbnails #product-detail-2 { display: block; }
+#img-vignette-2:checked ~ .slider-pop-up .details-and-thumbnails .thumbnails-selector label[for="img-vignette-2"] { border-color: #2E5939; }
+
+/* --- Image 3 (Mil) --- */
+#img-vignette-3:checked ~ .slider-pop-up .main-image-display .slides { transform: translateX(-22.22%); }
+#img-vignette-3:checked ~ .slider-pop-up .details-and-thumbnails #product-detail-3 { display: block; }
+#img-vignette-3:checked ~ .slider-pop-up .details-and-thumbnails .thumbnails-selector label[for="img-vignette-3"] { border-color: #2E5939; }
+
+/* --- Image 4 (Oignon) --- */
+#img-vignette-4:checked ~ .slider-pop-up .main-image-display .slides { transform: translateX(-33.33%); }
+#img-vignette-4:checked ~ .slider-pop-up .details-and-thumbnails #product-detail-4 { display: block; }
+#img-vignette-4:checked ~ .slider-pop-up .details-and-thumbnails .thumbnails-selector label[for="img-vignette-4"] { border-color: #2E5939; }
+
+/* --- Image 5 (Tomate) --- */
+#img-vignette-5:checked ~ .slider-pop-up .main-image-display .slides { transform: translateX(-44.44%); }
+#img-vignette-5:checked ~ .slider-pop-up .details-and-thumbnails #product-detail-5 { display: block; }
+#img-vignette-5:checked ~ .slider-pop-up .details-and-thumbnails .thumbnails-selector label[for="img-vignette-5"] { border-color: #2E5939; }
+
+/* --- Image 6 (Mangue) --- */
+#img-vignette-6:checked ~ .slider-pop-up .main-image-display .slides { transform: translateX(-55.55%); }
+#img-vignette-6:checked ~ .slider-pop-up .details-and-thumbnails #product-detail-6 { display: block; }
+#img-vignette-6:checked ~ .slider-pop-up .details-and-thumbnails .thumbnails-selector label[for="img-vignette-6"] { border-color: #2E5939; }
+
+/* --- Image 7 (Arachide) --- */
+#img-vignette-7:checked ~ .slider-pop-up .main-image-display .slides { transform: translateX(-66.66%); }
+#img-vignette-7:checked ~ .slider-pop-up .details-and-thumbnails #product-detail-7 { display: block; }
+#img-vignette-7:checked ~ .slider-pop-up .details-and-thumbnails .thumbnails-selector label[for="img-vignette-7"] { border-color: #2E5939; }
+
+/* --- Image 8 (Haricot) --- */
+#img-vignette-8:checked ~ .slider-pop-up .main-image-display .slides { transform: translateX(-77.77%); }
+#img-vignette-8:checked ~ .slider-pop-up .details-and-thumbnails #product-detail-8 { display: block; }
+#img-vignette-8:checked ~ .slider-pop-up .details-and-thumbnails .thumbnails-selector label[for="img-vignette-8"] { border-color: #2E5939; }
+
+/* --- Image 9 (Souchet) --- */
+#img-vignette-9:checked ~ .slider-pop-up .main-image-display .slides { transform: translateX(-88.88%); }
+#img-vignette-9:checked ~ .slider-pop-up .details-and-thumbnails #product-detail-9 { display: block; }
+#img-vignette-9:checked ~ .slider-pop-up .details-and-thumbnails .thumbnails-selector label[for="img-vignette-9"] { border-color: #2E5939; }
+
+/* ========================================================================================================================================================================================================================================================= */
+
+
+/* ==================================================== */
+/* MODALE / SLIDER CSS SEUL - NOUVELLE VERSION */
+/* ==================================================== */
+
+/* 1. État Initial de la Modale (Inchangé) */
+.modal-css1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2001;
+    visibility: hidden;
+    /* opacity: 0; */
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+/* 2. Affichage de la Modale au Clic de la Checkbox (Inchangé) */
+#modal-toggle1:checked ~ .modal-css1 {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+/* ==================================================== */
+/* 3. Conteneur de la Modale (FLOU D'ARRIÈRE-PLAN) */
+/* ==================================================== */
+.modal-content-css1 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1200px;
+    max-height: 90vh;
+    width: 90%;
+    background-color: #b1c2af; 
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+   backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px); 
+    overflow: hidden;
+}
+
+
+
+
+.modal-css1 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100vh;
+    width: 100%;
+    height: 100%;
+    z-index: 2001;
+    backdrop-filter: blur(3px);
+}
+
+/* Bouton de Fermeture (Inchangé) */
+.close-btn-css1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    left: 73em;
+    top: 0;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    color: #fff;
+    /* font-size: 30px; */
+    cursor: pointer;
+    z-index: 10001;
+    position: absolute;
+   background-color: #777777;
+    /* padding: 0 10px 5px; */
+}
+
+
+
+.close-btn-css1:hover {
+     color: #D4AF37; 
+    background-color: rgba(0, 0, 0, 0.7);
+} 
+
+
+/* ==================================================== */
+/* 4. Structure Interne du SLIDER (Grande Image + Détails) */
+/* ==================================================== */
+.slider-pop-up1 {
+    display: flex;
+    gap: 20px;
+    max-height: 100%;
+}
+
+.main-image-display1 {
+    width: 65%; 
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.details-and-thumbnails1 {
+    /* width: 35%;  */
+    display: flex;
+    flex-direction: column;
+}
+
+/* ==================================================== */
+/* 5. Styles de l'Image Principale (Slider) */
+/* ==================================================== */
+
+.slides1 {
+    display: flex;
+    width: 900%; 
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides1 img {
+
+width: calc(100% / 9);
+    height: 100%;
+    max-height: 70vh; 
+    object-fit: contain;
+    background-color: white;
+}
+
+/* ==================================================== */
+/* 6. Styles des Détails (Product Info) */
+/* ==================================================== */
+.product-info1 {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-right: 15px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+.product-detail1 {
+    display: none; 
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    transition: opacity 0.3s;
+}
+
+.product-detail1 h3 {
+    color: #2E5939;
+    font-size: 1.8rem;
+    margin-top: 0;
+}
+
+.product-detail1 p {
+    color: #444;
+    line-height: 1.6;
+}
+
+.product-price-popup1 {
+    display: block;
+    font-size: 1.5rem;
+    color: #D4AF37;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Affichage du premier détail par défaut */
+#product-detail-11 {
+    display: block;
+}
+
+/* ==================================================== */
+/* 7. Styles des Vignettes (Thumbnails) */
+/* ==================================================== */
+.thumbnails-selector1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.thumbnail-item1 {
+    display: block;
+    height: 80px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border 0.2s;
+}
+
+.thumbnail-item1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.thumbnail-item1:hover {
+    border-color: #D4AF37;
+}
+
+/* 8. Logique d'Affichage CSS pour le Slider & Détails (Le Hack) */
+
+/* Règle par défaut pour cacher tous les détails */
+.product-detail1 { display: none; }
+
+/* Logique de décalage de la grande image et d'affichage des détails
+  en fonction de l'input radio coché par la vignette (label) 
+*/
+
+/* --- Image 1 (Riz) --- */
+#img-vignette-11:checked ~ .slider-pop-up1 .main-image-display1 .slides1 { transform: translateX(0%); }
+#img-vignette-11:checked ~ .slider-pop-up1 .details-and-thumbnails1 #product-detail-11 { display: block; }
+#img-vignette-11:checked ~ .slider-pop-up1 .details-and-thumbnails1 .thumbnails-selector1 label[for="img-vignette-11"] { border-color: #2E5939; }
+
+/* --- Image 2 (Maïs) --- */
+#img-vignette-21:checked ~ .slider-pop-up1 .main-image-display1 .slides1 { transform: translateX(-11.11%); }
+#img-vignette-21:checked ~ .slider-pop-up1 .details-and-thumbnails1 #product-detail-21 { display: block; }
+#img-vignette-21:checked ~ .slider-pop-up1 .details-and-thumbnails1 .thumbnails-selector1 label[for="img-vignette-21"] { border-color: #2E5939; }
+
+/* --- Image 3 (Mil) --- */
+#img-vignette-31:checked ~ .slider-pop-up1 .main-image-display1 .slides1 { transform: translateX(-22.22%); }
+#img-vignette-31:checked ~ .slider-pop-up1 .details-and-thumbnails1 #product-detail-31 { display: block; }
+#img-vignette-31:checked ~ .slider-pop-up1 .details-and-thumbnails1 .thumbnails-selector1 label[for="img-vignette-31"] { border-color: #2E5939; }
+
+/* --- Image 4 (Oignon) --- */
+#img-vignette-41:checked ~ .slider-pop-up1 .main-image-display1 .slides1 { transform: translateX(-33.33%); }
+#img-vignette-41:checked ~ .slider-pop-up1 .details-and-thumbnails1 #product-detail-41 { display: block; }
+#img-vignette-41:checked ~ .slider-pop-up1 .details-and-thumbnails1 .thumbnails-selector1 label[for="img-vignette-41"] { border-color: #2E5939; }
+
+/* --- Image 5 (Tomate) --- */
+#img-vignette-51:checked ~ .slider-pop-up1 .main-image-display1 .slides1 { transform: translateX(-44.44%); }
+#img-vignette-51:checked ~ .slider-pop-up1 .details-and-thumbnails1 #product-detail-51 { display: block; }
+#img-vignette-51:checked ~ .slider-pop-up1 .details-and-thumbnails1 .thumbnails-selector1 label[for="img-vignette-51"] { border-color: #2E5939; }
+
+/* --- Image 6 (Mangue) --- */
+#img-vignette-61:checked ~ .slider-pop-up1 .main-image-display1 .slides1 { transform: translateX(-55.55%); }
+#img-vignette-61:checked ~ .slider-pop-up1 .details-and-thumbnails1 #product-detail-61 { display: block; }
+#img-vignette-61:checked ~ .slider-pop-up1 .details-and-thumbnails1 .thumbnails-selector1 label[for="img-vignette-61"] { border-color: #2E5939; }
+
+/* --- Image 7 (Arachide) --- */
+#img-vignette-71:checked ~ .slider-pop-up1 .main-image-display1 .slides1 { transform: translateX(-66.66%); }
+#img-vignette-7:checked ~ .slider-pop-up1 .details-and-thumbnails1 #product-detail-71 { display: block; }
+#img-vignette-71:checked ~ .slider-pop-up1 .details-and-thumbnails1 .thumbnails-selector1 label[for="img-vignette-71"] { border-color: #2E5939; }
+
+/* --- Image 8 (Haricot) --- */
+#img-vignette-81:checked ~ .slider-pop-up1 .main-image-display1 .slides1 { transform: translateX(-77.77%); }
+#img-vignette-81:checked ~ .slider-pop-up1 .details-and-thumbnails1 #product-detail-81 { display: block; }
+#img-vignette-81:checked ~ .slider-pop-up1 .details-and-thumbnails1 .thumbnails-selector1 label[for="img-vignette-81"] { border-color: #2E5939; }
+
+/* --- Image 9 (Souchet) --- */
+#img-vignette-91:checked ~ .slider-pop-up1 .main-image-display1 .slides1 { transform: translateX(-88.88%); }
+#img-vignette-91:checked ~ .slider-pop-up1 .details-and-thumbnails1 #product-detail-91 { display: block; }
+#img-vignette-91:checked ~ .slider-pop-up1 .details-and-thumbnails1 .thumbnails-selector1 label[for="img-vignette-91"] { border-color: #2E5939; }
+
+
+
+
+/* ========================================================================================================================================================================================================================================================= */
+
+/* ==================================================== */
+/* MODALE / SLIDER CSS SEUL - NOUVELLE VERSION */
+/* ==================================================== */
+
+/* 1. État Initial de la Modale (Inchangé) */
+.modal-css2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2001;
+    visibility: hidden;
+    /* opacity: 0; */
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+/* 2. Affichage de la Modale au Clic de la Checkbox (Inchangé) */
+#modal-toggle2:checked ~ .modal-css2 {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+/* ==================================================== */
+/* 3. Conteneur de la Modale (FLOU D'ARRIÈRE-PLAN) */
+/* ==================================================== */
+.modal-content-css2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1200px;
+    max-height: 90vh;
+    width: 90%;
+    background-color: #b1c2af; 
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+   backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px); 
+    overflow: hidden;
+}
+
+
+
+
+.modal-css2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100vh;
+    width: 100%;
+    height: 100%;
+    z-index: 2001;
+    backdrop-filter: blur(3px);
+}
+
+/* Bouton de Fermeture (Inchangé) */
+.close-btn-css2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    left: 73em;
+    top: 0;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    color: #fff;
+    /* font-size: 30px; */
+    cursor: pointer;
+    z-index: 10001;
+    position: absolute;
+   background-color: #777777;
+    /* padding: 0 10px 5px; */
+}
+
+
+
+.close-btn-css2:hover {
+     color: #D4AF37; 
+    background-color: rgba(0, 0, 0, 0.7);
+} 
+
+
+/* ==================================================== */
+/* 4. Structure Interne du SLIDER (Grande Image + Détails) */
+/* ==================================================== */
+.slider-pop-up2 {
+    display: flex;
+    gap: 20px;
+    max-height: 100%;
+}
+
+.main-image-display2 {
+    width: 65%; 
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.details-and-thumbnails2 {
+    /* width: 35%;  */
+    display: flex;
+    flex-direction: column;
+}
+
+/* ==================================================== */
+/* 5. Styles de l'Image Principale (Slider) */
+/* ==================================================== */
+
+.slides2 {
+    display: flex;
+    width: 900%; 
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides2 img {
+
+width: calc(100% / 9);
+    height: 100%;
+    max-height: 70vh; 
+    object-fit: contain;
+    background-color: white;
+}
+
+/* ==================================================== */
+/* 6. Styles des Détails (Product Info) */
+/* ==================================================== */
+.product-info2 {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-right: 15px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+.product-detail2 {
+    display: none; 
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    transition: opacity 0.3s;
+}
+
+.product-detail2 h3 {
+    color: #2E5939;
+    font-size: 1.8rem;
+    margin-top: 0;
+}
+
+.product-detail2 p {
+    color: #444;
+    line-height: 1.6;
+}
+
+.product-price-popup2 {
+    display: block;
+    font-size: 1.5rem;
+    color: #D4AF37;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Affichage du premier détail par défaut */
+#product-detail-12 {
+    display: block;
+}
+
+/* ==================================================== */
+/* 7. Styles des Vignettes (Thumbnails) */
+/* ==================================================== */
+.thumbnails-selector2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.thumbnail-item2 {
+    display: block;
+    height: 80px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border 0.2s;
+}
+
+.thumbnail-item2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.thumbnail-item2:hover {
+    border-color: #D4AF37;
+}
+
+/* 8. Logique d'Affichage CSS pour le Slider & Détails (Le Hack) */
+
+/* Règle par défaut pour cacher tous les détails */
+.product-detail2 { display: none; }
+
+/* Logique de décalage de la grande image et d'affichage des détails
+  en fonction de l'input radio coché par la vignette (label) 
+*/
+
+/* --- Image 1 (Riz) --- */
+#img-vignette-12:checked ~ .slider-pop-up2 .main-image-display2 .slides2 { transform: translateX(0%); }
+#img-vignette-12:checked ~ .slider-pop-up2 .details-and-thumbnails2 #product-detail-12 { display: block; }
+#img-vignette-12:checked ~ .slider-pop-up2 .details-and-thumbnails2 .thumbnails-selector2 label[for="img-vignette-12"] { border-color: #2E5939; }
+
+/* --- Image 2 (Maïs) --- */
+#img-vignette-22:checked ~ .slider-pop-up2 .main-image-display2 .slides2 { transform: translateX(-11.11%); }
+#img-vignette-22:checked ~ .slider-pop-up2 .details-and-thumbnails2 #product-detail-22 { display: block; }
+#img-vignette-22:checked ~ .slider-pop-up2 .details-and-thumbnails2 .thumbnails-selector2 label[for="img-vignette-22"] { border-color: #2E5939; }
+
+/* --- Image 3 (Mil) --- */
+#img-vignette-32:checked ~ .slider-pop-up2 .main-image-display2 .slides2 { transform: translateX(-22.22%); }
+#img-vignette-32:checked ~ .slider-pop-up2 .details-and-thumbnails2 #product-detail-32 { display: block; }
+#img-vignette-32:checked ~ .slider-pop-up2 .details-and-thumbnails2 .thumbnails-selector2 label[for="img-vignette-32"] { border-color: #2E5939; }
+
+/* --- Image 4 (Oignon) --- */
+#img-vignette-42:checked ~ .slider-pop-up2 .main-image-display2 .slides2 { transform: translateX(-33.33%); }
+#img-vignette-42:checked ~ .slider-pop-up2 .details-and-thumbnails2 #product-detail-42 { display: block; }
+#img-vignette-42:checked ~ .slider-pop-up2 .details-and-thumbnails2 .thumbnails-selector2 label[for="img-vignette-42"] { border-color: #2E5939; }
+
+/* --- Image 5 (Tomate) --- */
+#img-vignette-52:checked ~ .slider-pop-up2 .main-image-display2 .slides2 { transform: translateX(-44.44%); }
+#img-vignette-52:checked ~ .slider-pop-up2 .details-and-thumbnails2 #product-detail-52 { display: block; }
+#img-vignette-52:checked ~ .slider-pop-up2 .details-and-thumbnails2 .thumbnails-selector2 label[for="img-vignette-52"] { border-color: #2E5939; }
+
+/* --- Image 6 (Mangue) --- */
+#img-vignette-62:checked ~ .slider-pop-up2 .main-image-display2 .slides2 { transform: translateX(-55.55%); }
+#img-vignette-62:checked ~ .slider-pop-up2 .details-and-thumbnails2 #product-detail-62 { display: block; }
+#img-vignette-62:checked ~ .slider-pop-up2 .details-and-thumbnails2 .thumbnails-selector2 label[for="img-vignette-62"] { border-color: #2E5939; }
+
+/* --- Image 7 (Arachide) --- */
+#img-vignette-72:checked ~ .slider-pop-up2 .main-image-display2 .slides2 { transform: translateX(-66.66%); }
+/* CORRECTION: Doit être #img-vignette-72:checked pour afficher le detail 7 */
+#img-vignette-72:checked ~ .slider-pop-up2 .details-and-thumbnails2 #product-detail-72 { display: block; } 
+#img-vignette-72:checked ~ .slider-pop-up2 .details-and-thumbnails2 .thumbnails-selector2 label[for="img-vignette-72"] { border-color: #2E5939; }
+
+/* --- Image 8 (Haricot) --- */
+#img-vignette-82:checked ~ .slider-pop-up2 .main-image-display2 .slides2 { transform: translateX(-77.77%); }
+/* CORRECTION: Doit être #img-vignette-82:checked pour afficher le detail 8 */
+#img-vignette-82:checked ~ .slider-pop-up2 .details-and-thumbnails2 #product-detail-82 { display: block; } 
+#img-vignette-82:checked ~ .slider-pop-up2 .details-and-thumbnails2 .thumbnails-selector2 label[for="img-vignette-82"] { border-color: #2E5939; }
+
+/* --- Image 9 (Souchet) --- */
+#img-vignette-92:checked ~ .slider-pop-up2 .main-image-display2 .slides2 { transform: translateX(-88.88%); }
+#img-vignette-92:checked ~ .slider-pop-up2 .details-and-thumbnails2 #product-detail-92 { display: block; }
+#img-vignette-92:checked ~ .slider-pop-up2 .details-and-thumbnails2 .thumbnails-selector2 label[for="img-vignette-92"] { border-color: #2E5939; }
+
+
+
+
+
+
+
+
