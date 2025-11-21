@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kassoua </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./acceuil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<!-- Header -->
+<input type="checkbox" id="check" hidden>
+<input type="checkbox" name="" id="panier-check" hidden>
+<header>
+    <div class="top-header">
+        <div class="logo">
+            <h1>
+                <span class="green">KASS</span>
+                <span class="white">OUA</span>
+            </h1>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Rechercher un produit ou N° facture...">
+            <button class="search-btn">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+
+        <div class="service-client">
+            <div class="top">
+                <i class="fa fa-headset"></i>
+                <span>Service Client</span>
+            </div>
+            <div class="bottom">
+                <i class="fa fa-phone"></i>
+                <span>+227 90 00 00 00</span>
+            </div>
+        </div>
+
+        <!-- menu button -->
+        <label for="check" class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+    </div>
+
+    <div class="bottom-header" id="navLinks">
+        <nav>
+            <a href="#" class="home">Home</a>
+             <div class="dropdown">
+                <a href="#" class="other-link">Catégories <i class="fa-solid fa-angle-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="./artisanat/artisanat.html">Artisanat</a>
+                    <a href="./agro/agro.html">Agricoles</a>
+                    <a href="./elevage/elevage.html">Elevages</a>
+                </div>
+            </div>
+            <a href="#" class="other-link">Promotions</a>
+            <a href="#contact" class="other-link">Contact</a>
+            <a href="#about" class="other-link">A propos</a>
+        </nav>
+
+        <div class="left-icon">
+            <label for="panier-check">
+                <i class="fa fa-shopping-cart panier"></i>
+            </label>
+            
+            <a href="./connexion.html" class="compte"><i class="fa fa-user"></i><span>Déconnexion</span></a>
+        </div>
+    </div>
+</header>
+
+<!-- Contenu main insérez votre travail dans cette section main -->
+
+<main>
+    
+    <section id="hero-slider">
+        
+       
+        <div id="slides-container">
+            <div class="slide">
+                <img src="./assets/images/bg-slider/artisanes-nigeriennes.jpeg"  
+                     alt="Nouvelle collection d'hiver">
+            </div>
+            <div class="slide">
+               
+                <img src="./assets/images/bg-slider/covid19-pandemie-impacte-secteur-artisanat.jpg">
+            </div>
+            <div class="slide">
+               
+                <img src="./assets/images/bg-slider/festival-niger-aes-1024x682.jpg">
+            </div>
+            <div class="slide">
+                
+                <img src="./assets/images/bg-slider/niger-(1).jpg">
+            </div>
+
+            <div class="slide">
+                
+                <img src="./assets/images/bg-slider/ambiance-4.gif">
+            </div>
+        </div>
+        
+        <div class="overlay-content">
+            <h2>
+                Barka Da Zouwa
+            </h2>
+            <p>
+                Découvrez l’authenticité au cœur de chaque produit. Nous vous proposons une sélection unique d’articles artisanaux et agricoles, fabriqués avec passion et respect des traditions locales. Explorez nos collections et laissez-vous inspirer par la richesse de notre savoir-faire.
+            </p>
+            
+        </div>
+        <div class="button-group">
+                <a href="#shop" class="btn btn-shop">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+            </div>
+    </section>
+    <section class="products-section" id="produits">
+        
+        <h2 class="section-title">Nos Produits</h2>
+
+        <!-- Samira Code -->
+
+        <div class="products-grid">
+
+
+            <div class="product-card">
+                <span class="product-badge">Nouveau</span>
+                <div class="product-image">
+                    <img src="./assets/images/produits/image-3.jpg" alt="Collier Traditionnel">
+                    <div class="Explorer ">
+                        <button>
+                            <a href="#popup-image">
+                               <i class="fa-solid fa-eye"></i>
+
+                            </a>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="product-content">
+                    <div class="product-category">Cuir Sahara</div>
+                    <h3 class="product-title">sandales en cuir souple</h3>
+                    <p class="product-description">cuir lissé et coutures apparentes pour plus d’élégance.</p>
+                    <div class="product-footer">
+                        <div class="product-price">15,000 <span class="currency">FCFA</span></div>
+                        <button class="add-to-cart">Ajouter
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="./assets/images/produits/lumensoft-technologies-57S_y8OAFx4-unsplash.webp" alt="Boucles d'oreilles">
+                </div>
+                <div class="product-content">
+                    <div class="product-category">Touareg Prestige</div>
+                    <h3 class="product-title">cuir travaillé à la main</h3>
+                    <p class="product-description">Fabriqué à la main par des artisans locaux avec des perles
+                        authentiques.</p>
+                    <div class="product-footer">
+                        <div class="product-price">8,500 <span class="currency">FCFA</span></div>
+                        <button class="add-to-cart">
+                            Ajouter
+                            <i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <span class="product-badge">Chaussure</span>
+                <div class="product-image">
+                    <img src="./assets/images/produits/sandale-6-removebg-preview.png" alt="Paniers Tissés">
+                </div>
+                <div class="product-content">
+                    <div class="product-category">Nomade Classik</div>
+                    <h3 class="product-title">finition artisanale</h3>
+                    <p class="product-description">finition artisanale avec semelle renforcée.</p>
+                    <div class="product-footer">
+                        <div class="product-price">12,000 <span class="currency">FCFA</span></div>
+                        <button class="add-to-cart">Ajouter
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Duppliquer -->
+             <div class="product-card">
+                <span class="product-badge">Nouveau</span>
+                <div class="product-image">
+                    <img src="./assets/images/produits/image-3.jpg" alt="Collier Traditionnel">
+                    <div class="Explorer ">
+                        <button>
+                            <a href="#popup-image">
+                               <i class="fa-solid fa-eye"></i>
+
+                            </a>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="product-content">
+                    <div class="product-category">Cuir Sahara</div>
+                    <h3 class="product-title">sandales en cuir souple</h3>
+                    <p class="product-description">cuir lissé et coutures apparentes pour plus d’élégance.</p>
+                    <div class="product-footer">
+                        <div class="product-price">15,000 <span class="currency">FCFA</span></div>
+                        <button class="add-to-cart">Ajouter
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <span class="product-badge">Nouveau</span>
+                <div class="product-image">
+                    <img src="./assets/images/produits/image-3.jpg" alt="Collier Traditionnel">
+                    <div class="Explorer ">
+                        <button>
+                            <a href="#popup-image">
+                               <i class="fa-solid fa-eye"></i>
+
+                            </a>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="product-content">
+                    <div class="product-category">Cuir Sahara</div>
+                    <h3 class="product-title">sandales en cuir souple</h3>
+                    <p class="product-description">cuir lissé et coutures apparentes pour plus d’élégance.</p>
+                    <div class="product-footer">
+                        <div class="product-price">15,000 <span class="currency">FCFA</span></div>
+                        <button class="add-to-cart">Ajouter
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <span class="product-badge">Nouveau</span>
+                <div class="product-image">
+                    <img src="./assets/images/produits/image-3.jpg" alt="Collier Traditionnel">
+                    <div class="Explorer ">
+                        <button>
+                            <a href="#popup-image">
+                               <i class="fa-solid fa-eye"></i>
+
+                            </a>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="product-content">
+                    <div class="product-category">Cuir Sahara</div>
+                    <h3 class="product-title">sandales en cuir souple</h3>
+                    <p class="product-description">cuir lissé et coutures apparentes pour plus d’élégance.</p>
+                    <div class="product-footer">
+                        <div class="product-price">15,000 <span class="currency">FCFA</span></div>
+                        <button class="add-to-cart">Ajouter
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <span class="product-badge">Nouveau</span>
+                <div class="product-image">
+                    <img src="./assets/images/produits/image-3.jpg" alt="Collier Traditionnel">
+                    <div class="Explorer ">
+                        <button>
+                            <a href="#popup-image">
+                               <i class="fa-solid fa-eye"></i>
+
+                            </a>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="product-content">
+                    <div class="product-category">Cuir Sahara</div>
+                    <h3 class="product-title">sandales en cuir souple</h3>
+                    <p class="product-description">cuir lissé et coutures apparentes pour plus d’élégance.</p>
+                    <div class="product-footer">
+                        <div class="product-price">15,000 <span class="currency">FCFA</span></div>
+                        <button class="add-to-cart">Ajouter
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <span class="product-badge">Nouveau</span>
+                <div class="product-image">
+                    <img src="./assets/images/produits/image-3.jpg" alt="Collier Traditionnel">
+                    <div class="Explorer ">
+                        <button>
+                            <a href="#popup-image">
+                               <i class="fa-solid fa-eye"></i>
+
+                            </a>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="product-content">
+                    <div class="product-category">Cuir Sahara</div>
+                    <h3 class="product-title">sandales en cuir souple</h3>
+                    <p class="product-description">cuir lissé et coutures apparentes pour plus d’élégance.</p>
+                    <div class="product-footer">
+                        <div class="product-price">15,000 <span class="currency">FCFA</span></div>
+                        <button class="add-to-cart">Ajouter
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <span class="product-badge">Nouveau</span>
+                <div class="product-image">
+                    <img src="./assets/images/produits/image-3.jpg" alt="Collier Traditionnel">
+                    <div class="Explorer ">
+                        <button>
+                            <a href="#popup-image">
+                               <i class="fa-solid fa-eye"></i>
+
+                            </a>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="product-content">
+                    <div class="product-category">Cuir Sahara</div>
+                    <h3 class="product-title">sandales en cuir souple</h3>
+                    <p class="product-description">cuir lissé et coutures apparentes pour plus d’élégance.</p>
+                    <div class="product-footer">
+                        <div class="product-price">15,000 <span class="currency">FCFA</span></div>
+                        <button class="add-to-cart">Ajouter
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Fin samira code -->
+    </section>
+    <!-- Section A propos -->
+    <section id="about">
+        <h2 class="section-title">Qui Sommes-Nous ?</h2>
+        <div class="about-container">
+            <!-- <h2 class="about-title">À propos de nous</h2> -->
+            <p class="about-text">
+                Nous sommes une plateforme dédiée à la valorisation des richesses artisanales et agricoles locales. 
+                Notre mission est de connecter les producteurs passionnés et les artisans talentueux avec les consommateurs 
+                à la recherche de produits authentiques, naturels et fabriqués dans le respect des traditions.
+            </p>
+            <p class="about-text">
+                Chaque produit que nous proposons est soigneusement sélectionné pour garantir la qualité, 
+                la fraîcheur et l’originalité, tout en soutenant le développement local et une économie durable.
+            </p>
+        </div>
+    </section>
+    <!-- <section class="temoignage">
+
+    </section> -->
+    <section class="partners">
+        <h2 class="section-title">Nos Partenaires</h2>
+        <div class="partners-logos">
+            <div class="partner-item">
+                <img src="./assets/images/partenaire/OPVN_NIGER.jpg" alt="Partenaire 1">
+            </div>
+            <div class="partner-item">
+                <img src="./assets/images/partenaire/ansi.png" alt="Partenaire 2">
+            </div>
+            <div class="partner-item">
+                <img src="./assets/images/partenaire/cropped-codeloccol-logo.png" alt="Partenaire 3">
+            </div>
+            <div class="partner-item">
+                <img src="./assets/images/partenaire/bagri.png" alt="Partenaire 4">
+            </div>
+        </div>
+    </section>
+    <section class="temoignage">
+        <h2 class="section-title">Témoignage</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="quote-icon">❝</div>
+                <div class="stars">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <p class="testimonial-text">
+                    "Excellente qualité des produits artisanaux. J'ai commandé plusieurs articles en cuir et la finition est impeccable. Livraison rapide et service client très réactif."
+                </p>
+                <div class="customer-info">
+                    <div class="customer-avatar">
+                        <img src="./assets/images/temoignage/temoignage-1.jpg" alt="">
+                    </div>
+                    <div class="customer-details">
+                        <div class="customer-name">Rafiatou Soumaila</div>
+                        <span class="customer-category">Artisanat</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="quote-icon">❝</div>
+                <div class="stars">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <p class="testimonial-text">
+                    "Je commande régulièrement mes produits agro-alimentaires ici. Tout est frais, bien emballé et halal certifié. C'est devenu mon site de référence pour mes courses."
+                </p>
+                <div class="customer-info">
+                    <div class="customer-avatar">
+                        <img src="./assets/images/temoignage/temoignage-2.jpg" alt="">
+                    </div>
+                    <div class="customer-details">
+                        <div class="customer-name">Asmah Yerima</div>
+                        <span class="customer-category">Agro-alimentaire</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="quote-icon">❝</div>
+                <div class="stars">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <p class="testimonial-text">
+                    "Parfait pour mes besoins en élevage. Les produits sont de qualité et les prix très compétitifs. L'équipe est professionnelle et toujours à l'écoute."
+                </p>
+                <div class="customer-info">
+                    <div class="customer-avatar">
+                        <img src="./assets/images/temoignage/temoignage-3.jpg" alt="">
+                    </div>
+                    <div class="customer-details">
+                        <div class="customer-name">Mariam Kallassi</div>
+                        <span class="customer-category">Élevage</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <h2 class="contact-title">Contactez-nous</h2>
+
+            <p class="contact-desc">
+                Une question, une suggestion ou un besoin particulier ? 
+                Notre équipe est à votre écoute.
+            </p>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Votre nom" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" placeholder="Votre email" required>
+                </div>
+
+                <div class="form-group">
+                    <textarea placeholder="Votre message" required></textarea>
+                </div>
+
+                <button type="submit" class="contact-btn">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <input type="checkbox" name="" id="panier-check">
+
+    <div class="cart-card" id="panier-card">
+        <div class="cart-header">
+            <i class="fa-solid fa-basket-shopping"></i>
+            <h3>Panier</h3>
+        </div>
+
+        <div class="cart-item">
+            <img src="./assets/images/produits/bague.jpg" alt="Produit">
+            <div class="item-info">
+                <p class="item-name">Encens Traditionnel</p>
+                <p class="item-qty">Quantité : 1</p>
+            </div>
+            <p class="item-price">4 500 FCFA</p>
+        </div>
+
+        <div class="cart-summary">
+            <p>Total articles : <span>3</span></p>
+            <p>Total panier : <span>12 500 FCFA</span></p>
+        </div>
+
+        <a href="#" class="cart-btn">Voir le panier
+                <i class="fa-solid fa-basket-shopping"></i>
+        </a>
+        <a href="#" class="order-btn">Commander
+        <i class="fa-solid fa-cart-plus"></i>
+
+        </a>
+    </div>
+
+</main>
+
+<!-- Footer -->
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>À propos</h3>
+            <hr>
+            <p>Kassoua est une plateforme dédiée à la valorisation du savoir-faire local.</p>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-phone"></i> +227 80 04 27 06
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope"></i> contact@nigerartisan.ne
+                </li>
+                <li><i class="fa-solid fa-location-dot"></i> Niamey, Niger</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Liens rapides</h3>
+            <hr>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Produits</a></li>
+                <li><a href="#">Notre histoire</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Service client</h3>
+            <hr>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Livraison</a></li>
+                <li><a href="#">Retours</a></li>
+                <li><a href="#">Paiement</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Newsletter</h3>
+            <hr>
+            <p class="news-p">Recevez nos nouveautés, promotions et actualités directement dans votre boîte mail.</p>
+            <form action="#" class="newsletter-form">
+                <input type="email" placeholder="Entrez votre adresse email..." required>
+                <button type="submit">S'abonner</button>
+            </form>
+        </div>
+        <div class="footer-section">
+            <h3>Moyens de Paiements</h3>
+            <hr>
+            <p>Paiements sécurisés via nos partenaires :</p>
+            <div class="payment-icons">
+                <img src="./assets/images/unnamed.png" alt="">
+                <img src="./assets/images/idGwiphYKV_logos.jpeg" alt="">
+                <img src="./assets/images/airtel-money-tanzania-logo-png_seeklogo-527192.png" alt="">
+                <img src="./assets/images/wave.png">
+                <img src="./assets/images/unnamed (1).png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Niger Artisan. Tous droits réservés.</p>
+        <a href="#hero-slider" class="back-to-top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+    </div>
+</footer>
+    
+    
+</body>
+</html>

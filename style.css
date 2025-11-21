@@ -14,9 +14,9 @@ body{
 /* Style Header */
 header{
     width: 100%;
-    height: 200px;
+    height: auto;
     position: fixed;
-    z-index: 2000;
+    z-index: 5000;
 }
 /* top-header style */
 .top-header{
@@ -36,7 +36,7 @@ header{
 }
 .logo h1 span.green{
     color: #fff;
-    background-color: #004b23;
+    background-color: #046c3a;
     padding: 10px;
 }
 .logo h1 span.white{
@@ -64,7 +64,7 @@ header{
 }
 
 .search-btn {
-    background-color: #064f2b;  
+    background-color: #046c3a;  
     color: white;
     border: none;
     padding: 20px 14px;
@@ -103,7 +103,7 @@ header{
 
 .service-client i {
     font-size: 18px;
-    color: #064f2b; 
+    color: #046c3a; 
 }
 
 .service-client span {
@@ -181,6 +181,47 @@ header{
     width: 50%;
 }
 
+/* drop down */
+
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #046c3a;
+    display: none; /* caché */
+    flex-direction: column;
+    min-width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    padding: 10px 0;
+    z-index: 100;
+}
+
+.dropdown-content a {
+    color: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background: #f1f1f1;
+    color: #046c3a;
+}
+
+/* afficher au survol */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
 .left-icon{
     display: flex;
     align-items: center;
@@ -207,7 +248,7 @@ header{
 footer {
     background-color: #046c3a;
     color: white;
-    margin-top: 80px;
+   
 }
 
 .footer-content {
@@ -343,7 +384,8 @@ footer {
         width: 100%;
     }
     .top-header {
-        padding: 40px 60px;
+        padding: 2px 60px;
+        height: 60px;
     }
     .logo h1{
         font-size: 18px;
@@ -357,11 +399,11 @@ footer {
     }
 
     .search-bar {
-        width: 350px;
+        width: 300px;
     }
 
     .service-client {
-        padding: 8px 80px;
+        padding: 2px 80px;
     }
 
 
@@ -395,14 +437,15 @@ footer {
     }
 }
 
-@media (max-width:1024px) {
+@media (min-width:1024px) {
 
     /* Header */
     header{
         width: 100%;
     }
     .top-header {
-        padding: 40px 30px;
+        padding: 0px 30px;
+        height: 80px;
     }
     .logo h1{
         font-size: 18px;
@@ -420,7 +463,7 @@ footer {
     }
 
     .service-client {
-        padding: 8px 50px;
+        padding: 2px 50px;
     }
     .service-client .top{
         font-size: 10px;
@@ -449,6 +492,9 @@ footer {
     .footer-content{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .newsletter-form button{
+        width: 100px;
     }
 }
 
@@ -553,6 +599,13 @@ footer {
     /* Footer */
     .newsletter-form button, .newsletter-form input{
         width: 250px;
+    }
+    .newsletter-form{
+        justify-content: center;
+    }
+    .footer-content{
+       padding: 20px 0;
+       justify-content: center;
     }
 }
 
